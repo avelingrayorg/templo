@@ -42,6 +42,7 @@ h2 + .hours { font-size: 88%; }
     position: fixed;
     top: 2.5em;
     left: 1em;
+    width: auto;
   }
   nav a {
     display: block;
@@ -51,9 +52,13 @@ h2 + .hours { font-size: 88%; }
   main {
     background-color: #111;
     display: inline-block;
-    margin: 2.5em 0 0 calc(100% - 13em);
+    margin: 2.5em 0 0 42%;
     max-width: 12em;
     opacity: .9;
     padding: .5em 1em;
   }
+}
+
+@media (min-width: 900px) {
+  html { background-position: center 55%; }
 }
