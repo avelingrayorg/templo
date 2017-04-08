@@ -1,0 +1,23 @@
+{
+  "name": "templo",
+  "version": "1.0.0",
+  "description": "templo website",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -f index.html style.css --no-ui --no-notify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bclinkinbeard/egghead-d3v4.git"
+  },
+  "keywords": [],
+  "author": "Aveling Ray <avelingray@gmail.com> (http://avelingray.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avelingrayorg/templo/issues"
+  },
+  "homepage": "https://github.com/avelingrayorg/templo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
