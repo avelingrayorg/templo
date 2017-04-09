@@ -9,8 +9,7 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 header,
-main,
-footer {
+main {
   margin: 0;
   width: 100%;
 }
@@ -46,14 +45,22 @@ p {
 .hours p { margin: 0; }
 .hours p:first-of-type { font-size: 82%; margin-bottom: .4em; }
 
-#press, #contact {
-  text-align: center;
-}
+#press, #contact { text-align: center; }
 #press a,
-#contact a {
+#contact p:not(.social) a {
   padding-bottom: .1em;
   border-bottom: 1px solid;
 }
+.social { letter-spacing: .5em; margin-top: 1.2em; }
+
+.copyright {
+  padding: 1em 0;
+  text-align: center;
+}
+.copyright p {
+  margin: 0;
+}
+  
 
 form {
   border: 1px solid;
