@@ -14,6 +14,15 @@ footer {
   margin: 0;
   width: 100%;
 }
+section {
+  padding: 0 1em;
+}
+section:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid;
+}
+section:not(:first-child) h1 {
+  text-transform: uppercase;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -28,11 +37,27 @@ p {
   font-size: 60%;
   line-height: 1.7;
 }
-.hours { margin: 0; }
-h2 + .hours { font-size: 86%; }
+.hours {
+  background-color: #1D2932;
+  padding-top: .1em;
+  padding-bottom: .8em;
+  text-align: center;
+}
+.hours p { margin: 0; }
+.hours p:first-of-type { font-size: 82%; margin-bottom: .4em; }
+
+#press, #contact {
+  text-align: center;
+}
+#press a,
+#contact a {
+  padding-bottom: .1em;
+  border-bottom: 1px solid;
+}
 
 form {
   border: 1px solid;
+  margin-bottom: 1em;
   padding: .2em;
   text-align: center;
 }
@@ -58,11 +83,9 @@ form {
   main {
     background-color: #111;
     display: inline-block;
-    /*margin: 2.5em 0 0 42%;*/
     margin: 2em 0 0 calc(100% - 14em);
     max-width: 12em;
     opacity: .9;
-    padding: .5em 1em;
   }
 }
 
