@@ -78,36 +78,23 @@ form {
 }
 
 @media (max-width: 499px) {
-
-header { text-align: center; }
-header nav {
-  display: block;
-  border-bottom: 1px solid;
-}
-header ul {
-  display: flex;
-  justify-content: space-between;
-}
-header li {
-  display: inline-block;
-}
-header a {
-  display: block;
-  font-size: 70%;
-  padding: 1em;
-  text-transform: uppercase;
-}
-  #about { position: relative; }
-  #about::before {
-    background-color: #10171E;
-    content: '';
+  header { text-align: center; }
+  header nav {
     display: block;
-    height: 2em;
-    width: 110%;
-    transform: rotate(4deg);
-    position: absolute;
-    top: -2.2em;
-    left: -.2em;
+    border-bottom: 1px solid;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header li {
+    display: inline-block;
+  }
+  header a {
+    display: block;
+    font-size: 70%;
+    padding: 1em;
+    text-transform: uppercase;
   }
 }
 
