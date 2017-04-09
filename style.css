@@ -29,7 +29,13 @@ p {
   line-height: 1.7;
 }
 .hours { margin: 0; }
-h2 + .hours { font-size: 88%; }
+h2 + .hours { font-size: 86%; }
+
+form {
+  border: 1px solid;
+  padding: .2em;
+  text-align: center;
+}
 
 
 @media (min-width: 500px) {
@@ -41,7 +47,7 @@ h2 + .hours { font-size: 88%; }
     display: inline-block;
     position: fixed;
     top: 2.5em;
-    left: 1em;
+    left: 1.6em;
     width: auto;
   }
   nav a {
@@ -53,7 +59,7 @@ h2 + .hours { font-size: 88%; }
     background-color: #111;
     display: inline-block;
     /*margin: 2.5em 0 0 42%;*/
-    margin: 2.5em 0 0 calc(100% - 14em);
+    margin: 2em 0 0 calc(100% - 14em);
     max-width: 12em;
     opacity: .9;
     padding: .5em 1em;
