@@ -13,13 +13,20 @@ main {
   margin: 0;
   width: 100%;
 }
-section {
+
+
+section > * {
   padding: 0 1em;
+}
+section > img,
+section > .img {
+  padding: 0;
 }
 section:not(:first-child):not(:last-child) {
   border-bottom: 1px solid;
 }
 section:not(:first-child) h1 {
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 a {
@@ -35,6 +42,15 @@ h1, h2 { font-size: 90%; }
 p {
   font-size: 60%;
   line-height: 1.7;
+}
+img {
+  width: 100%;
+}
+form {
+  border: 1px solid;
+  margin: 0 1em 1em;
+  padding: .2em;
+  text-align: center;
 }
 .hours {
   background-color: #1D2932;
@@ -60,15 +76,40 @@ p {
 .copyright p {
   margin: 0;
 }
-  
 
-form {
-  border: 1px solid;
-  margin-bottom: 1em;
-  padding: .2em;
-  text-align: center;
+@media (max-width: 499px) {
+
+header { text-align: center; }
+header nav {
+  display: block;
+  border-bottom: 1px solid;
 }
-
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+header li {
+  display: inline-block;
+}
+header a {
+  display: block;
+  font-size: 70%;
+  padding: 1em;
+  text-transform: uppercase;
+}
+  #about { position: relative; }
+  #about::before {
+    background-color: #10171E;
+    content: '';
+    display: block;
+    height: 2em;
+    width: 110%;
+    transform: rotate(4deg);
+    position: absolute;
+    top: -2.2em;
+    left: -.2em;
+  }
+}
 
 @media (min-width: 500px) {
   html {
@@ -81,6 +122,10 @@ form {
     top: 2.5em;
     left: 1.6em;
     width: auto;
+  }
+  header h1,
+  header img {
+    display: none;
   }
   nav a {
     display: block;
