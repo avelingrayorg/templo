@@ -8,7 +8,7 @@ html {
 body { font-family: 'Roboto Slab', serif; }
 header, main { margin: 0; width: 100%; }
 header a { display: block; }
-section > * { padding: 0 1em; }
+section > * { padding: 0 1rem; }
 section > img, section > .img { padding: 0; }
 section:not(:first-child):not(:last-child) { border-bottom: 1px solid; }
 section:not(:first-child) h1 { letter-spacing: 1px; text-transform: uppercase; }
