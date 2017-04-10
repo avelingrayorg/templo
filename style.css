@@ -1,67 +1,37 @@
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; width: auto; }
 html {
   background-color: #10171E;
   color: #ECF0F1;
   font-size: calc(1vw + 1em);
 }
-body {
-  font-family: 'Roboto Slab', serif;
-}
-header,
-main {
-  margin: 0;
-  width: 100%;
-}
-
-
-section > * {
-  padding: 0 1em;
-}
-section > img,
-section > .img {
-  padding: 0;
-}
-section:not(:first-child):not(:last-child) {
-  border-bottom: 1px solid;
-}
-section:not(:first-child) h1 {
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-h1, h2 { font-size: 90%; }
-p {
-  font-size: 60%;
-  line-height: 1.7;
-}
-img {
-  width: 100%;
-}
+body { font-family: 'Roboto Slab', serif; }
+header, main { margin: 0; width: 100%; }
+header a { display: block; }
+section > * { padding: 0 1em; }
+section > img, section > .img { padding: 0; }
+section:not(:first-child):not(:last-child) { border-bottom: 1px solid; }
+section:not(:first-child) h1 { letter-spacing: 1px; text-transform: uppercase; }
+a { color: inherit; text-decoration: none; }
+ul, li { list-style: none; margin: 0; padding: 0; }
+h1 { font-size: 90%; }
+p { font-size: 60%; line-height: 1.7; }
+img { width: 100%; }
 form {
   border: 1px solid;
   margin: 0 1em 1em;
   padding: .2em;
   text-align: center;
 }
+.hours, #press, #contact { text-align: center; }
 .hours {
   background-color: #1D2932;
   padding-top: .1em;
   padding-bottom: .8em;
-  text-align: center;
 }
 .hours p { margin: 0; }
 .hours p:first-of-type { font-size: 82%; margin-bottom: .4em; }
 
-#press, #contact { text-align: center; }
 #press a,
 #contact p:not(.social) a {
   padding-bottom: .1em;
@@ -69,31 +39,17 @@ form {
 }
 .social { letter-spacing: .5em; margin-top: 1.2em; }
 
-.copyright {
-  padding: 1em 0;
-  text-align: center;
-}
-.copyright p {
-  margin: 0;
-}
+.copyright { padding: 1em 0; text-align: center; }
+.copyright p { margin: 0; }
 
 @media (max-width: 499px) {
+  html { background-image: none; }
   header { text-align: center; }
-  header nav {
-    display: block;
-    border-bottom: 1px solid;
-  }
-  header ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  header li {
-    display: inline-block;
-  }
+  header nav { border-bottom: 1px solid; width: 100%; }
+  header li { display: inline-block; }
   header a {
-    display: block;
-    font-size: 70%;
-    padding: 1em;
+    font-size: 66%;
+    padding: 1em .6em;
     text-transform: uppercase;
   }
 }
@@ -115,7 +71,6 @@ form {
     display: none;
   }
   nav a {
-    display: block;
     font-size: 80%;
     padding: .5em 1em;
   }
@@ -128,6 +83,7 @@ form {
   }
 }
 
+/* raise the background so people aren't cut off at the neck */
 @media (min-width: 900px) {
   html { background-position: center 55%; }
 }
