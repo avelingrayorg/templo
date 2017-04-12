@@ -75,10 +75,12 @@ form {
     padding: .5em 1em;
   }
   main {
+    position: absolute;
+    top: calc(4vh + 2vw);
+    right: calc(3vh + 2vw);
+    width: 54%;
+    max-width: 20em;
     background-color: #111;
-    display: inline-block;
-    margin: 2em 0 0 calc(100% - 14em);
-    max-width: 12em;
     opacity: .9;
   }
 }
