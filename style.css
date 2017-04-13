@@ -38,6 +38,10 @@ form {
   border-bottom: 1px solid;
 }
 .social { letter-spacing: .5em; margin-top: 1.2em; }
+.social svg {
+  width: 2.5rem;
+  fill: white;
+}
 
 .copyright { padding: 1em 0; text-align: center; }
 .copyright p { margin: 0; }
