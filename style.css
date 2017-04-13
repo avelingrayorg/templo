@@ -3,6 +3,7 @@ html, body { margin: 0; padding: 0; width: auto; }
 html { background-color: #10171E; color: #ECF0F1; }
 body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
+main { min-width: 320px; max-width: 500px; }
 header a { display: block; }
 section > * { padding: 0 1rem; }
 section > img, section > .img { padding: 0; }
@@ -38,7 +39,7 @@ img { width: 100%; }
 .copyright p { margin: 0; }
 
 @media (max-width: 499px) {
-  html { background-image: none; font-size: calc(1vw + 1.1em); }
+  html { background-image: none; font-size: calc(1vw + 1.2em); }
   header { text-align: center; }
   header nav { border-bottom: 1px solid; width: 100%; }
   header li { display: inline-block; }
