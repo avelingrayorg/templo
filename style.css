@@ -1,28 +1,19 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; width: auto; }
-html {
-  background-color: #10171E;
-  color: #ECF0F1;
-  font-size: calc(1vw + 1em);
-}
+html { background-color: #10171E; color: #ECF0F1; }
 body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
 header a { display: block; }
 section > * { padding: 0 1rem; }
 section > img, section > .img { padding: 0; }
 section:not(:first-child):not(:last-child) { border-bottom: 1px solid; }
-section:not(:first-child) h1 { letter-spacing: 1px; text-transform: uppercase; }
+h1, h2 { font-weight: 400; letter-spacing: 1px; text-align: center; }
+h1 { font-size: 114%; }
+h2 { font-size: 104%; }
 a { color: inherit; text-decoration: none; }
 ul, li { list-style: none; margin: 0; padding: 0; }
-h1 { font-size: 150%; font-weight: 400; }
-p { font-size: 100%; line-height: 1.7; }
+p { font-size: 90%; line-height: 1.7; }
 img { width: 100%; }
-form {
-  border: 1px solid;
-  margin: 0 1em 1em;
-  padding: .2em;
-  text-align: center;
-}
 .hours, #press, #contact { text-align: center; }
 .hours {
   background-color: #1D2932;
@@ -47,13 +38,13 @@ form {
 .copyright p { margin: 0; }
 
 @media (max-width: 499px) {
-  html { background-image: none; }
+  html { background-image: none; font-size: calc(1vw + 1.1em); }
   header { text-align: center; }
   header nav { border-bottom: 1px solid; width: 100%; }
   header li { display: inline-block; }
   header a {
-    font-size: 66%;
-    padding: 1em .6em;
+    font-size: 70%;
+    padding: 1em .6em 1.5em;
     text-transform: uppercase;
   }
 }
@@ -62,6 +53,7 @@ form {
   html {
     background: url(img/storefront.jpg) no-repeat center center fixed;
     background-size: cover;
+    font-size: calc(1vw + .6em);
   }
   header {
     display: inline-block;
@@ -75,7 +67,6 @@ form {
     display: none;
   }
   nav a {
-    font-size: 80%;
     padding: .5em 1em;
   }
   main {
@@ -87,8 +78,6 @@ form {
     background-color: #111;
     opacity: .9;
   }
-  h1 { font-size: 90%; }
-  p { font-size: 60%; }
 }
 
 /* raise the background so people aren't cut off at the neck */
