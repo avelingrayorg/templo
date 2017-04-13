@@ -5,7 +5,7 @@ html {
   color: #ECF0F1;
   font-size: calc(1vw + 1em);
 }
-body { font-family: 'Roboto Slab', serif; }
+body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
 header a { display: block; }
 section > * { padding: 0 1rem; }
