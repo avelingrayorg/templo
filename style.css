@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; width: auto; }
-html { background-color: #10171E; color: #ECF0F1;  font-size: 18px; letter-spacing: .1px; }
+html { background-color: #140f10; color: #f9f3f0;  font-size: 18px; letter-spacing: .1px; }
 body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; max-width: 500px; }
@@ -92,8 +92,7 @@ img { width: 100%; }
     right: calc(3vh + 2vw);
     width: 54%;
     max-width: 20em;
-    background-color: #111;
-    opacity: .9;
+    background-color: rgba(14,10,10,0.9);
   }
 }
 
