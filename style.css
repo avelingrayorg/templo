@@ -43,7 +43,7 @@ img { width: 100%; }
   max-width: 18px;
   fill: #f75c54;
   width: 0.8em;
-  margin: 0 0 -0.125em 0.25em;
+  margin: 0 0.2em -0.125em 0;
 }
 #press img { margin-bottom: 2em; }
 #contact img { margin-bottom: 1.2em; }
