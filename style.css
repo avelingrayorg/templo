@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; width: auto; }
-html { background-color: #10171E; color: #ECF0F1;  font-size: 18px; }
+html { background-color: #10171E; color: #ECF0F1;  font-size: 18px; letter-spacing: .1px; }
 body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; max-width: 500px; }
@@ -43,9 +43,10 @@ img { width: 100%; }
   header { text-align: center; }
   header nav { border-bottom: 1px solid; width: 100%; }
   header li { display: inline-block; }
-  header a {
+  nav a {
     font-size: 70%;
-    padding: 1em .6em 1.5em;
+    font-weight: bold;
+    padding: 1em .3em 1.5em;
     text-transform: uppercase;
   }
 }
