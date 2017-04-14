@@ -34,6 +34,11 @@ img { width: 100%; }
   padding-bottom: .1em;
   border-bottom: 1px solid;
 }
+#map-pin {
+  fill: #f75c54;
+  width: 0.8em;
+  margin: 0 0 -0.125em 0.25em;
+}
 #press img { margin-bottom: 2em; }
 #contact img { margin-bottom: 1.2em; }
 .social { letter-spacing: .5em; margin-top: 1.2em; }
