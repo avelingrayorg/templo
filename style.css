@@ -20,7 +20,7 @@ a svg:hover { fill: #f75c54; }
 ul, li { list-style: none; margin: 0; padding: 0; }
 p { font-size: 88%; line-height: 1.7; }
 img { width: 100%; }
-.logo { max-width: 200px; margin: 0.25em auto 0; }
+.logo { max-height: 58px; max-width: 200px; margin: 0.25em auto 0; }
 #about h1 { font-size: 88%; line-height: 1.7; text-align: left; }
 #about > p { margin-top: 0; }
 .hours, #press, #contact { text-align: center; }
@@ -47,6 +47,8 @@ img { width: 100%; }
 #contact img { margin-bottom: 1.2em; }
 .social { letter-spacing: .5em; margin-top: 1.2em; }
 .social svg {
+  max-height: 60px;
+  max-width: 60px;
   width: 2.5rem;
   fill: white;
 }
