@@ -39,6 +39,8 @@ img { width: 100%; }
   border-bottom: 2px solid #f75c54;
 }
 #map-pin {
+  max-height: 28px;
+  max-width: 18px;
   fill: #f75c54;
   width: 0.8em;
   margin: 0 0 -0.125em 0.25em;
