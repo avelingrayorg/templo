@@ -74,7 +74,7 @@ img { width: 100%; }
 
 @media (min-width: 600px) {
   html { font-size: calc(1vw + .6em); }
-  body { background-image: url(https://www.transparenttextures.com/patterns/navy.png); }
+  body { background-image: url(https://www.transparenttextures.com/patterns/black-paper.png); }
   .wrap { max-width: 1600px; }
   .wrap::before {
     max-width: 1600px;
