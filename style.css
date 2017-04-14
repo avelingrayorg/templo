@@ -5,22 +5,20 @@ body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; max-width: 500px; }
 header a { display: block; }
+section { padding: 1.2em 0; }
 section > * { padding: 0 1rem; }
 section > img, section > .img { padding: 0; }
 section:not(:first-child):not(:last-child) { border-bottom: 1px solid; }
 h1, h2 { font-weight: 400; letter-spacing: 1px; text-align: center; }
 h1 { font-size: 114%; }
 h2 { font-size: 104%; }
+h1 + * { display: block; margin-top: 2em; }
 a { color: inherit; text-decoration: none; }
 ul, li { list-style: none; margin: 0; padding: 0; }
 p { font-size: 88%; line-height: 1.7; }
 img { width: 100%; }
 .hours, #press, #contact { text-align: center; }
-.hours {
-  background-color: #1D2932;
-  padding-top: .1em;
-  padding-bottom: .8em;
-}
+.hours { background-color: #1D2932; }
 .hours p { margin: 0; }
 .hours p:first-of-type { font-size: 82%; margin-bottom: .4em; }
 .obee-widget { margin-top: 2.2em; padding: 0; }
@@ -29,13 +27,15 @@ img { width: 100%; }
   padding-bottom: .1em;
   border-bottom: 1px solid;
 }
+#press img { margin-bottom: 2em; }
+#contact img { margin-bottom: 1.2em; }
 .social { letter-spacing: .5em; margin-top: 1.2em; }
 .social svg {
   width: 2.5rem;
   fill: white;
 }
 
-.copyright { padding: 1em 0; text-align: center; }
+.copyright { font-size: 80%; padding: 2em 0; text-align: center; }
 .copyright p { margin: 0; }
 
 @media (max-width: 499px) {
