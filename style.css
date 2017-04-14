@@ -23,7 +23,7 @@ img { width: 100%; }
 }
 .hours p { margin: 0; }
 .hours p:first-of-type { font-size: 82%; margin-bottom: .4em; }
-
+.obee-widget { margin-top: 2.2em; padding: 0; }
 #press a,
 #contact p:not(.social) a {
   padding-bottom: .1em;
