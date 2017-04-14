@@ -24,7 +24,11 @@ img { width: 100%; }
 #about h1 { font-size: 88%; line-height: 1.7; text-align: left; }
 #about > p { margin-top: 0; }
 .hours, #press, #contact { text-align: center; }
-.hours { color: #140f10; background-color: #f9f3f0; padding-bottom: 2em; }
+.hours {
+  color: #140f10;
+  background-color: #b6ab9f;
+  padding: .5em 0;
+}
 .hours h1 { color: #140f10; font-weight: 400; }
 .hours p { margin: 1em 0; }
 .hours p:first-of-type { font-size: 98%; margin-bottom: .4em; }
