@@ -2,7 +2,7 @@
 html, body { margin: 0; padding: 0; width: auto; }
 html { color: #f9f3f0;  font-size: 18px; letter-spacing: .1px; }
 body { background-color: #140f10; font-family: 'Roboto Slab', serif; font-weight: 300; }
-.wrap { margin: auto; max-width: 800px; position: relative; width: 100%; }
+.wrap { margin: auto; position: relative; width: 100%; }
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; }
 header a { display: block; }
