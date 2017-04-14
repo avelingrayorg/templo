@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; width: auto; }
-html { background-color: #10171E; color: #ECF0F1; }
+html { background-color: #10171E; color: #ECF0F1;  font-size: 16px; }
 body { font-family: 'Roboto Slab', serif; font-weight: 300; }
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; max-width: 500px; }
