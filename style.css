@@ -102,9 +102,8 @@ img { width: 100%; }
     padding: .5em 1em;
   }
   main {
-    margin: 2em 2em 0 0;
+    margin: 2em 0 0 44%;
     max-width: 500px;
-    float: right;
     width: 50%;
     background-color: rgba(14,10,10,0.9);
   }
