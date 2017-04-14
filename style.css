@@ -103,6 +103,7 @@ img { width: 100%; }
   .logo {
     display: none;
   }
+  nav { margin-top: 1.4em; }
   nav a {
     padding: .5em 1em;
   }
