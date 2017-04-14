@@ -25,7 +25,7 @@ img { width: 100%; }
 #about h1 { font-size: 88%; line-height: 1.7; text-align: left; font-weight: 300;}
 #about > p {margin-top: 0;}
 .hours, #press, #contact { text-align: center; }
-.hours { background-color: #1D2932; padding-bottom: 2em; }
+.hours { color: #140f10; background-color: #f9f3f0; padding-bottom: 2em; }
 .hours p { margin: 0; }
 .hours p:first-of-type { font-size: 82%; margin-bottom: .4em; }
 .obee-widget { margin-top: 3em; padding: 0; }
