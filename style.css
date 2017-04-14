@@ -113,8 +113,3 @@ img { width: 100%; }
     background-color: rgba(14,10,10,0.9);
   }
 }
-
-/* raise the background so people aren't cut off at the neck */
-@media (min-width: 900px) {
-  html { background-position: center 55%; }
-}
