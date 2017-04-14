@@ -94,7 +94,6 @@ img { width: 100%; }
   header {
     display: inline-block;
     position: fixed;
-    left: 2em;
     width: auto;
   }
   header img {
