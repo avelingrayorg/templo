@@ -39,7 +39,7 @@ img { width: 100%; }
 .copyright p { margin: 0; }
 
 @media (max-width: 499px) {
-  html { background-image: none; font-size: calc(1vw + 1.2em); }
+  html { background-image: none; font-size: calc(1vw + 1.24em); }
   header { text-align: center; }
   header nav { border-bottom: 1px solid; width: 100%; }
   header li { display: inline-block; }
