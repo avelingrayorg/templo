@@ -72,6 +72,19 @@ img { width: 100%; }
     padding: 1em .3em;
     text-transform: uppercase;
   }
+  #up {
+    background-color: #111;
+    opacity: .7;
+    text-align: center;
+    line-height: 1.25;
+    border: 1px solid;
+    border-radius: 100%;
+    position: fixed;
+    bottom: .5em;
+    right: .6em;
+    width: 1em;
+    height: 1em;
+  }
 }
 
 @media (min-width: 600px) {
@@ -124,6 +137,9 @@ img { width: 100%; }
     max-width: 500px;
     width: 50%;
     background-color: rgba(14,10,10,0.9);
+  }
+  #up {
+    display: none;
   }
 }
 
