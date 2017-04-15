@@ -64,10 +64,11 @@ img { width: 100%; }
   header { text-align: center; }
   header nav { border-bottom: 1px solid; width: 100%; margin-top: 0; padding: .5em 0; }
   header li { display: inline-block; }
+  nav li:first-child { display: none; }
   nav a {
     font-size: 70%;
     font-weight: bold;
-    padding: 1em .3em;
+    padding: 1em .4em;
     text-transform: uppercase;
   }
 }
