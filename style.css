@@ -67,7 +67,7 @@ img { width: 100%; }
   nav li:first-child { display: none; }
   nav a {
     font-size: 70%;
-    font-weight: bold;
+    letter-spacing: 2px;
     padding: 1em .4em;
     text-transform: uppercase;
   }
