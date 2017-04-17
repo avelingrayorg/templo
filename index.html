@@ -138,13 +138,7 @@
 (function() {
   'use strict';
   function scrollIt(destination) {
-    var duration = arguments.length <= 1 || arguments[1] === undefined ? 200 : arguments[1];
-    var easing = arguments.length <= 2 || arguments[2] === undefined ? 'linear' : arguments[2];
-    var callback = arguments[3];
-    var easings = {
-      linear: function linear(t) { return t; },
-      easeOutQuad: function easeOutQuad(t) { return t * (2 - t); }
-    };
+    var duration = 300;
     var start = window.pageYOffset;
     var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
     var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
@@ -154,24 +148,16 @@
 
     if ('requestAnimationFrame' in window === false) {
       window.scroll(0, destinationOffsetToScroll);
-      if (callback) {
-        callback();
-      }
       return;
     }
 
     function scroll() {
       var now = 'now' in window.performance ? performance.now() : new Date().getTime();
       var time = Math.min(1, (now - startTime) / duration);
-      var timeFunction = easings[easing](time);
+      var timeFunction = time * (2 - time);
       window.scroll(0, Math.ceil(timeFunction * (destinationOffsetToScroll - start) + start));
 
-      if (window.pageYOffset === destinationOffsetToScroll) {
-        if (callback) {
-          callback();
-        }
-        return;
-      }
+      if (window.pageYOffset === destinationOffsetToScroll) return;
 
       requestAnimationFrame(scroll);
     }
@@ -181,15 +167,11 @@
 
   document.querySelector('nav').addEventListener('click', function (e) {
     if (e.target.tagName !== 'A') return;
-    scrollIt(document.querySelector(e.target.hash), 300, 'easeOutQuad', function () {
-      var navLinks = document.querySelectorAll('nav a'), i;
-      for (i = 0; i < navLinks.length; ++i) { navLinks[i].classList.remove('nav-active'); }
-      e.target.classList.add('nav-active');
-    });
+    scrollIt(document.querySelector(e.target.hash));
   });
 
   document.querySelector('#up').addEventListener('click', function () {
-    scrollIt(document.querySelector('#home'), 300, 'easeOutQuad');
+    scrollIt(document.querySelector('#home'));
   });
 }());
 </script>
