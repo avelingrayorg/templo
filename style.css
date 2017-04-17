@@ -125,7 +125,7 @@ img { width: 100%; }
     padding: .5em 1em;
   }
   nav a::before {
-    content: '\2764';
+    content: '\2771';
     opacity: 0;
     padding-right: 0.25em;
   }
