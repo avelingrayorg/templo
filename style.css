@@ -128,7 +128,6 @@ img { width: 100%; }
     opacity: 0;
     padding-right: 0.25em;
   }
-  .nav-active::before,
   nav a:hover::before {
     opacity: 1;
   }
