@@ -34,8 +34,9 @@ img { width: 100%; }
   padding-bottom: .1em;
   border-bottom: 1px solid;
 }
+#reservations p a { border-bottom: 1px solid; }
 #press a:hover,
-#contact p:not(.social) a:hover {
+#contact p:not(.social) a:hover, #reservations p a:hover {
   border-bottom: 2px solid #f75c54;
 }
 #map-pin {
