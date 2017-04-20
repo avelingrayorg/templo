@@ -72,6 +72,23 @@ img { width: 100%; }
     padding: 1em .3em;
     text-transform: uppercase;
   }
+
+  /*wedge over bottom of header image - start*/
+  .wrap { overflow: hidden; }
+  main { position: relative; }
+  main::before {
+    background: #140F10;
+    content: '';
+    display: block; 
+    height: 1em;
+    width: 120%;
+    transform: rotate(3.5deg);
+    position: absolute;
+    top: -1.34em;
+    left: -1em;
+  }
+  /*wedge over bottom of header image - end*/
+
   #up {
     background-color: #111;
     opacity: .7;
