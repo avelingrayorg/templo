@@ -60,7 +60,7 @@ img { width: 100%; }
 .copyright p { margin: 0; }
 
 @media (max-width: 599px) {
-  html { background-image: none; font-size: calc(1vw + 1.24em); }
+  html { background-image: none; font-size: calc(1vw + .9em); }
   header { text-align: center; }
   header nav { border-bottom: 1px solid; width: 100%; margin-top: 0; padding: .5em 0; }
   header li { display: inline-block; }
