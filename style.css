@@ -109,66 +109,56 @@ img { width: 100%; }
 @media (min-width: 600px) {
   html { font-size: calc(1vw + .45em); }
   body {
-    /*background-image: url(https://www.transparenttextures.com/patterns/black-paper.png);*/
-  background-image: url(https://www.transparenttextures.com/patterns/soft-circle-scales.png);
-  background-attachment: fixed;
-  background-color: #191d25;
-}
-  .wrap { max-width: 1400px; }
-  .wrap::before {
-    max-width: 900px;
-    content: '';
-    display: block;
+    background-image: url(https://www.transparenttextures.com/patterns/soft-circle-scales.png);
+    background-attachment: fixed;
+    background-color: #191d25;
+  }
+  .wrap { width: 100%; margin: auto; max-width: 1400px; }
+  header {
     position: fixed;
-    /*left: 0;*/
     top: 0;
-    /*right: 0;
-    bottom: 0;*/
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: url(img/storefront.jpg) no-repeat center 40%;
+    bottom: 0;
+    width: 45%;
+    background: url(img/storefront.jpg) no-repeat;
+    background-position: left 20%;
     background-size: cover;
   }
-  header {
-    display: inline-block;
-    position: fixed;
-    margin-left: 3em;
-    width: auto;
-  }
-  header img {
-    display: none;
-  }
-  .logo {
-    display: none;
-  }
-  nav { margin-top: 7vh; }
-  nav a {
-    padding: .5em 1em;
-  }
+  header nav { position: relative; z-index: 1; }
+  header img { display: none; }
+  .logo { display: none; }
+  nav { display: inline-block; margin: 2.5em 0 0 1.5em; }
+  nav a { padding: .5em 1em; }
   nav a::before {
     content: '\2771';
     opacity: 0;
     padding-right: 0.25em;
   }
-  nav a:hover::before {
-    opacity: 1;
-  }
+  nav a:hover::before { opacity: 1; }
   main {
     background-color: rgb(14,10,10);
-    float: right;
-    /*margin: 2em 2.5em 0 0;*/
-    max-width: 500px;
+    margin: 0 0 0 45%;
     position: relative;
-    width: 50%;
+    width: 55%;
     z-index: 1;
   }
-  #about h1 {
-    margin-top: 5vh;
+  #about h1 { margin-top: 1.5em; }
+  #up { display: none; }
+}
+
+/* set a hard limit of 500px on main */
+@media (min-width: 920px) {
+  header {
+    width: calc(100% - 500px);
   }
-  #up {
-    display: none;
+  main {
+    margin: 0 0 0 calc(100% - 500px);
+    width: 500px;
+  }
+}
+
+@media (min-width: 1100px) {
+  header {
+    background-position: left 60%;
   }
 }
 
