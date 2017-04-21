@@ -79,7 +79,7 @@ img { width: 100%; }
   main::before {
     background: #140F10;
     content: '';
-    display: block; 
+    display: block;
     height: 2.2em;
     width: 120%;
     -webkit-transform: rotate(3.5deg);
