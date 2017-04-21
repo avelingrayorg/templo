@@ -162,6 +162,6 @@ img { width: 100%; }
   }
 }
 
-@media (min-width: 1600px) {
-  html { font-size: 1.6em; }
+@media (min-width: 1400px) {
+  html { font-size: 1.325em; }
 }
