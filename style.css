@@ -72,19 +72,23 @@ img { width: 100%; }
 
   /*wedge over bottom of header image - start*/
   .wrap { overflow: hidden; }
-  main { position: relative; }
+  /*main { position: relative; }*/
   main::before {
     background: #0E0A0A;
+    background: red;
     content: '';
     display: block;
     height: 2.2em;
     width: 120%;
+    margin: -1.2em 0 -1.2em -1em; /*added*/
     -webkit-transform: rotate(3.5deg);
         -ms-transform: rotate(3.5deg);
             transform: rotate(3.5deg);
+    /*
     position: absolute;
     top: -1.34em;
     left: -1em;
+    */
   }
   /*wedge over bottom of header image - end*/
 
