@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; width: auto; }
 html { color: #f9f3f0;  font-size: 18px; letter-spacing: .1px; }
-body { background-color: #140f10; font-family: 'Roboto Slab', serif; font-weight: 300; }
+body { background-color: #0E0A0A; font-family: 'Roboto Slab', serif; font-weight: 300; }
 .wrap { margin: auto; position: relative; width: 100%; }
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; }
@@ -108,11 +108,6 @@ img { width: 100%; }
 
 @media (min-width: 600px) {
   html { font-size: calc(1vw + .45em); }
-  body {
-    background-image: url(https://www.transparenttextures.com/patterns/soft-circle-scales.png);
-    background-attachment: fixed;
-    background-color: #191d25;
-  }
   .wrap { width: 100%; margin: auto; max-width: 1400px; }
   header {
     position: fixed;
@@ -135,7 +130,7 @@ img { width: 100%; }
   }
   nav a:hover::before { opacity: 1; }
   main {
-    background-color: rgb(14,10,10);
+    background-color: #0E0A0A;
     margin: 0 0 0 45%;
     position: relative;
     width: 55%;
