@@ -1,0 +1,10 @@
+# Force HTTPS on all URLS
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirect non-www urls to www
+
+# RewriteCond %{HTTP_HOST} ^templo\.com\.au [NC]
+# RewriteRule (.*) https://www.templo.com.au/$1 [R=301,L]
