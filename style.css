@@ -21,8 +21,8 @@ ul, li { list-style: none; margin: 0; padding: 0; }
 p { font-size: 88%; line-height: 1.7; }
 img { width: 100%; }
 .logo { max-height: 58px; max-width: 200px; margin: 0.25em auto 0; }
-#about h1 { font-size: 100%; line-height: 1.7; text-align: left; }
-#about > p { margin-top: 0; }
+#home h1 { font-size: 100%; line-height: 1.7; text-align: left; }
+#home > p { margin-top: 0; }
 .hours, #press, #contact { text-align: center; }
 .hours { background-color: #292425; padding: .5em 0; }
 .hours p { margin: 1em 0; }
@@ -125,12 +125,13 @@ img { width: 100%; }
   nav a:hover::before { opacity: 1; }
   main {
     background-color: #0E0A0A;
+    display: block;
     margin: 0 0 0 45%;
     position: relative;
     width: 55%;
     z-index: 1;
   }
-  #about h1 { margin-top: 1.5em; }
+  #home h1 { margin-top: 1.5em; }
   #up { display: none; }
 }
 
