@@ -145,48 +145,5 @@
   ]
   } </script>
 
-<script>
-//https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/
-(function() {
-  'use strict';
-  function scrollIt(destination) {
-    var duration = 300;
-    var start = window.pageYOffset;
-    var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
-    var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-    var destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
-    var destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
-
-    if ('requestAnimationFrame' in window === false) {
-      window.scroll(0, destinationOffsetToScroll);
-      return;
-    }
-
-    function scroll() {
-      var now = 'now' in window.performance ? performance.now() : new Date().getTime();
-      var time = Math.min(1, (now - startTime) / duration);
-      var timeFunction = time * (2 - time);
-      window.scroll(0, Math.ceil(timeFunction * (destinationOffsetToScroll - start) + start));
-
-      if (window.pageYOffset === destinationOffsetToScroll) return;
-
-      requestAnimationFrame(scroll);
-    }
-
-    scroll();
-  }
-
-  document.querySelector('nav').addEventListener('click', function (e) {
-    if (e.target.tagName !== 'A') return;
-    //scrollIt(document.querySelector(e.target.hash));
-  });
-
-  document.querySelector('#up').addEventListener('click', function () {
-    //scrollIt(document.querySelector('#home'));
-  });
-}());
-</script>
-
 </body>
 </html>
