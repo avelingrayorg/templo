@@ -73,15 +73,31 @@ img { width: 100%; }
   /*wedge over bottom of header image - start*/
   .wrap { overflow: hidden; }
   main::before {
+    box-sizing: border-box;
     background: #0E0A0A;
+
+    /* REMOVE BELOW WHEN DONE TESTING */
+    background: red;
+    border: 4px solid pink;
+    /* REMOVE ABOVE WHEN DONE TESTING */
+
     content: '';
     display: block;
     height: 2.2em;
+
+    /* REMOVE BELOW IF SKEW TESTS OUT OK
     width: 120%;
     margin: -1.2em 0 -1.2em -1em;
     -webkit-transform: rotate(3.5deg);
         -ms-transform: rotate(3.5deg);
             transform: rotate(3.5deg);
+    REMOVE ABOVE IF SKEW TESTS OUT OK */
+
+    width: 100%;
+    margin: -1.2em 0;
+    -webkit-transform: skewY(3.5deg);
+        -ms-transform: skewY(3.5deg);
+            transform: skewY(3.5deg);
   }
   /*wedge over bottom of header image - end*/
 
