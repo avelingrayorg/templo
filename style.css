@@ -119,7 +119,7 @@ img { width: 100%; }
 @media (min-width: 600px) {
   html { font-size: calc(1vw + .45em); }
   .wrap { width: 100%; margin: auto; max-width: 1400px; }
-  .mobile .wrap, .tablet .wrap { height: 100vh; overflow: auto; }
+  .tablet .wrap { height: 100vh; overflow: auto; }
   header {
     position: fixed;
     top: 0;
