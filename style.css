@@ -26,7 +26,6 @@ img { width: 100%; }
 .hours, #press, #contact { text-align: center; }
 .hours { background-color: #292425; padding: .5em 0; }
 .hours p { margin: 1em 0; }
-.hours p:first-of-type { font-size: 98%; margin-bottom: .4em; }
 .obee-widget { margin-top: 3em; padding: 0; }
 #press a,
 #contact p:not(.social) a {
