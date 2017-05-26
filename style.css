@@ -1,8 +1,8 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; width: auto; }
 html { color: #f9f3f0;  font-size: 18px; letter-spacing: .1px; }
-body { background-color: #0E0A0A; font-family: 'Roboto Slab', serif; font-weight: 300; }
-.wrap { margin: auto; position: relative; width: 100%; }
+body { background-color: #0E0A0A; font-family: 'Roboto Slab', serif; font-weight: 300; position: fixed; top: 0; bottom: 0; left: 0; right: 0; }
+.wrap { margin: auto; width: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: auto; -webkit-overflow-scrolling: touch;}
 header, main { margin: 0; width: 100%; }
 main { min-width: 320px; }
 header a { display: block; }
@@ -71,7 +71,8 @@ img { width: 100%; }
   }
 
   /*wedge over bottom of header image - start*/
-  .wrap { overflow: hidden; }
+
+  /*.wrap { overflow: hidden; }*//*RA Disabled This to fix address bar bug*/
   main::before {
     box-sizing: border-box;
     background: #0E0A0A;
